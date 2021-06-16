@@ -1,5 +1,7 @@
 {
   "name": "ionPlex",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

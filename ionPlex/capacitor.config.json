@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionPlex",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
