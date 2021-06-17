@@ -26,10 +26,14 @@
     "@capacitor/keyboard": "1.0.1",
     "@capacitor/status-bar": "1.0.1",
     "@ionic/angular": "^5.5.2",
+    "assert": "^2.0.0",
     "electron": "^13.1.2",
+    "https-browserify": "^1.0.0",
     "ngx-electron": "^2.2.0",
+    "node-gyp": "^8.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "util": "^0.12.4",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
