@@ -1,0 +1,30 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-button *ngFor="let movie of plexMovies"
+    routerLink="/movie/{{ getMovieKey(movie.key) }}">{{ movie.title }}
+  </ion-button> -->
+  <div class="grid-full">
+    <ion-row>
+      <ion-col *ngFor="let movie of plexMovies">
+        <ion-card routerLink="/movie/{{ getMovieKey(movie.key) }}">
+          <img
+            class="header-img"
+            [src]="getPoster(movie)"
+            #imageHeader
+          />
+          <ion-card-header>
+            <ion-card-subtitle>{{ movie.year }}</ion-card-subtitle>
+            <ion-card-title>{{ movie.title }}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ movie.summary | slice:0:100}}...
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

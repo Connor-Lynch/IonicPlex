@@ -1,0 +1,22 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header-container">
+
+    <ion-button routerLink="{{ getUrl() }}" class="watch-button">Watch</ion-button>
+    <img
+      class="poster-img"
+      [src]="getPoster(movie)"
+    />
+    <img
+      class="header-img"
+      [src]="getArt(movie)"
+    />
+  </div>
+  <div class="content-container">
+    <h1>{{ movie.title }}</h1>
+    <p>{{ movie.summary }}</p>
+  </div>
+</ion-content>

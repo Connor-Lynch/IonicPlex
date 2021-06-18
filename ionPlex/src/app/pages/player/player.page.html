@@ -1,0 +1,11 @@
+<ion-header>
+  <app-main-toolbar></app-main-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 *ngIf="fileType != 'mp4'">Video Format Not Supported</h1>
+  <video id="video-container" controls *ngIf="fileType === 'mp4'">
+    <source [src]="filePath" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</ion-content>

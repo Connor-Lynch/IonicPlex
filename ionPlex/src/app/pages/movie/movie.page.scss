@@ -1,0 +1,30 @@
+.header-container{
+  height: 40%;
+  overflow: hidden;
+  display: flex;
+}
+
+.header-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.poster-img {
+  padding-left: 5%;
+  margin-bottom: 2%;
+  width: 20%;
+  position: absolute;
+  align-self: flex-end;
+}
+
+.watch-button {
+  padding-left: 25%;
+  margin-bottom: 2%;
+  // width: 20%;
+  position: absolute;
+  align-self: flex-end;
+}
+
+.content-container {
+  padding: 2%;
+}

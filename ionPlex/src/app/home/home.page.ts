@@ -14,9 +14,12 @@ export class HomePage {
   ) {
   }
 
-  public testPlex() {
-    this.plexService.getAllMovies();
+  public getLibrary() {
+    this.plexService.getLibrary();
   }
 
+  public getMovies() {
+    this.plexService.getAllMovies();
+  }
 
 }
